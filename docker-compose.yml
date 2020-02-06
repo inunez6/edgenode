@@ -71,6 +71,8 @@ services:
     security_opt:
      - no-new-privileges:false
     ports:
+     - "443:443"
+     - "80:80"
      - "192.168.122.1:443:443"
      - "192.168.122.1:80:80"
     volumes:
